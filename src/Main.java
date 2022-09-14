@@ -2,11 +2,20 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        //Deklaracja zmiennych
+        //Products, makro
+        HashMap<String, ArrayList[]> products_with_macro = new HashMap<>();
+
+        //Products
         ArrayList<String> products = new ArrayList<>();
-        boolean break_while = false;
+        //Makro
+                ArrayList<Integer> wegle = new ArrayList<>();
+                ArrayList<Integer> bialko = new ArrayList<>();
+                ArrayList<Integer> tluszcz = new ArrayList<>();
+                ArrayList<Integer> kcal = new ArrayList<>();
+            ArrayList[] makro = {wegle, bialko, tluszcz, kcal};
 
         //Główny program
+        boolean break_while = false;
         while (!break_while) {
             System.out.println("""
                     1 - Display list of products
